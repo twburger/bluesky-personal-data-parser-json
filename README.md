@@ -1,4 +1,3 @@
-
 # BlueSky CAR File Data Parser
 
 This project provides a tool to parse and extract data from CAR (Content Addressable Archive) files exported from repositories on the AT Protocol, including platforms like Bluesky. The tool decodes the repository data, processes it into JSON format, and organizes it by lexicon type.
@@ -51,7 +50,7 @@ To use this parser, ensure you have the following installed:
 
 ## Usage
 
-1. Place the CAR file you want to parse in the root directory of the project. Rename it to `repo.car` or update the `carFilePath` in the `main.go` file.
+1. Download at https://bsky.app/settings via "Export My Data" and place the CAR file you want to parse in the root directory of the project. Make sure it is named`repo.car` or update the `carFilePath` in the `main.go` file.
 
 2. Run the parser:
    ```bash

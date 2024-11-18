@@ -1,0 +1,12 @@
+[
+  {
+    "$type": "app.bsky.graph.follow",
+    "createdAt": "2023-11-23T21:03:47.700Z",
+    "subject": "did:plc:z72i7hdynmk6r22z27h6tvur"
+  },
+  {
+    "$type": "app.bsky.graph.follow",
+    "createdAt": "2023-11-23T21:03:55.282Z",
+    "subject": "did:plc:xrcaory6yluqoouspugaiqa4"
+  }
+]

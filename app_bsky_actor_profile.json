@@ -1,0 +1,25 @@
+[
+  {
+    "$type": "app.bsky.actor.profile",
+    "avatar": {
+      "$type": "blob",
+      "mimeType": "image/jpeg",
+      "ref": {
+        "Number": 42,
+        "Content": "AAFVEiCh3xKlLnI/6A1q17TtfqsBrVdTfbHNqKRt4Dujcd0RzQ=="
+      },
+      "size": 72309
+    },
+    "banner": {
+      "$type": "blob",
+      "mimeType": "image/jpeg",
+      "ref": {
+        "Number": 42,
+        "Content": "AAFVEiAFc34mr8dfE7SrDRsGnSYuWN/5xx0ILRcHmvpI2M53Tg=="
+      },
+      "size": 179256
+    },
+    "description": "Open source Temporal Graph Convolutional networks. Papers to come. https://github.com/TrafficGCN 📍Munich",
+    "displayName": "TrafficGCN"
+  }
+]
