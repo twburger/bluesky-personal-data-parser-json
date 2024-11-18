@@ -52,6 +52,8 @@ To use this parser, ensure you have the following installed:
 
 1. Download at https://bsky.app/settings via "Export My Data" and place the CAR file you want to parse in the root directory of the project. Make sure it is named`repo.car` or update the `carFilePath` in the `main.go` file.
 
+<img width="1084" alt="Screenshot 2024-11-19 at 00 52 55" src="https://github.com/user-attachments/assets/5427d178-3621-4ff8-9634-37556c593a28">
+
 2. Run the parser:
    ```bash
    go run main.go
