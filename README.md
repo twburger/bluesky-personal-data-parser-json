@@ -3,13 +3,16 @@ This project provides a tool to parse and extract data from CAR (Content Address
 
 ## What is a CAR File?
 <img src="https://github.com/user-attachments/assets/e47c4868-d99f-4b5a-bf48-5a970a77292a" width="500" align="right">
+
 A **CAR (Content Addressable Archive)** file is a snapshot of a repository’s state in the AT Protocol. It encapsulates all public data for a repository, such as posts, likes, and social graphs. CAR files are useful for:
 - **Portability**: Sharing and offline analysis of repository data.
 - **Consistency**: Capturing the exact state of a repository at a specific time.
 - **Backup and Archiving**: Preserving repository data independently of live APIs.
 
-### Summary of Use Cases
 
+
+
+### Summary of Use Cases
 | **Use Case**               | **CAR File** | **DID/API Queries** |
 |----------------------------|--------------|---------------------|
 | Offline access             | ✅           | ❌                  |
