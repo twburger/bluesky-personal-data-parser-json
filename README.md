@@ -9,8 +9,10 @@ A **CAR (Content Addressable Archive)** file is a snapshot of a repository’s s
 - **Consistency**: Capturing the exact state of a repository at a specific time.
 - **Backup and Archiving**: Preserving repository data independently of live APIs.
 
-
-
+<br />
+<br />
+<br />
+<br />
 
 ### Summary of Use Cases
 | **Use Case**               | **CAR File** | **DID/API Queries** |
