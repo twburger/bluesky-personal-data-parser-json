@@ -2,16 +2,13 @@
 This project provides a tool to parse and extract data from CAR (Content Addressable Archive) files exported from repositories on the AT Protocol, including platforms like Bluesky. The tool decodes the repository data, processes it into JSON format, and organizes it by lexicon type.
 
 ## What is a CAR File?
-<img src="https://github.com/user-attachments/assets/e47c4868-d99f-4b5a-bf48-5a970a77292a" width="400" align="right">
+<img src="https://github.com/user-attachments/assets/e47c4868-d99f-4b5a-bf48-5a970a77292a" width="350" align="right">
 
 A **CAR (Content Addressable Archive)** file is a snapshot of a repository’s state in the AT Protocol. It encapsulates all public data for a repository, such as posts, likes, and social graphs. CAR files are useful for:
 - **Portability**: Sharing and offline analysis of repository data.
 - **Consistency**: Capturing the exact state of a repository at a specific time.
 - **Backup and Archiving**: Preserving repository data independently of live APIs.
 
-<br />
-<br />
-<br />
 <br />
 
 ### Summary of Use Cases
