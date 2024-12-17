@@ -1,5 +1,6 @@
 package main
 
+
 import (
 	"context"
 	"encoding/json"
@@ -49,8 +50,11 @@ func parseCarFile(carPath string) error {
 	if err != nil {
 		return fmt.Errorf("failed to parse DID: %w", err)
 	}
-	topDir := did.String()
-
+	
+	// Windows will not allow a directory name to have a colon as a character
+	//topDir := did.String()
+	topDir := strings.ReplaceAll(did.String(), ":", "_")
+	
 	// Create the output directory for storing raw CBOR files
 	err = os.MkdirAll(topDir, os.ModePerm)
 	if err != nil {

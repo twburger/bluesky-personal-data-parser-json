@@ -1,6 +1,7 @@
 # BlueSky CAR File Data Parser
 This project provides a tool to parse and extract data from CAR (Content Addressable Archive) files exported from repositories on the AT Protocol, including platforms like Bluesky. The tool decodes the repository data, processes it into JSON format, and organizes it by lexicon type.
 
+
 ## What is a CAR File?
 <img src="https://github.com/user-attachments/assets/e47c4868-d99f-4b5a-bf48-5a970a77292a" width="350" align="right">
 
