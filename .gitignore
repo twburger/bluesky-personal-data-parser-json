@@ -2,3 +2,4 @@
 repo.car
 *.json
 *.cbor
+repo.html
