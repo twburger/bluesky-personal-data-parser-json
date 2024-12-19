@@ -1,6 +1,7 @@
 # BlueSky CAR File Data Parser
 This project provides a tool to parse and extract data from CAR (Content Addressable Archive) files exported from repositories on the AT Protocol, including platforms like Bluesky. The tool decodes the repository data, processes it into JSON format, and organizes it by lexicon type.
 
+This branch is a modification of the original code for running in Windows and adds a conversion Python script to create an HTML file
 
 ## What is a CAR File?
 <img src="https://github.com/user-attachments/assets/e47c4868-d99f-4b5a-bf48-5a970a77292a" width="350" align="right">
@@ -36,18 +37,25 @@ To use this parser, ensure you have the following installed:
 
 - **Go** (1.20 or later)
 - A CAR file to process (exported from a Bluesky repository).
+- GO programming language support
+- Python 3 programming language support
 
 ## Installation
 
 1. Clone this repository:
-   ```bash
+   ```bash/Powershell
    git clone https://github.com/thomasafink/bluesky-personal-data-parser-json.git
    cd bluesky-personal-data-parser-json
    ```
 
 2. Install the required Go modules:
-   ```bash
+   ```bash/Powershell
    go mod tidy
+   ```
+   
+3. Install the required Python library
+   ```bash/Powershell
+   pip install json2html
    ```
 
 ## Usage
@@ -64,11 +72,11 @@ To use this parser, ensure you have the following installed:
 3. The tool will:
    - Save individual CBOR and JSON records in a directory named after the repository DID.
    - Generate aggregated JSON files for each lexicon type (e.g., `app_bsky_feed_post.json`) in the root directory.
-
+  
 ### Example Output
 
 After running the tool, you will find:
-- A directory named after the DID (e.g., `did:plc:abc123`) containing:
+- A directory named after the DID (e.g., `did_plc_abc123`) containing:
   - CBOR files for each record.
   - JSON files for each record.
 - Aggregated JSON files in the root directory for each lexicon type.
@@ -84,6 +92,12 @@ After running the tool, you will find:
   }
 ]
 ```
+
+## Creating HTML
+   - Run the JSON2HTML.py code to create the file "repo.html" from "app_bsky_feed_post.json"
+   ```
+   python .\json2html.py
+   ```
 
 ## Known Issues
 
