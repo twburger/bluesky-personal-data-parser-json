@@ -8,8 +8,9 @@ htmlfilename = "repo.html"
     
 with open(jsonfilename, "r", encoding='utf-8') as jasonfile:
     JasonData = json.load(jasonfile)
- 
-jasonfile.close
+
+# unneeded using with  
+# jasonfile.close
 
   
 # print(json2html.convert(json = JasonData))
@@ -17,4 +18,5 @@ jasonfile.close
 with open(htmlfilename, "w", encoding='utf-8') as htmlfile:
     htmlfile.write(json2html.convert(json = JasonData))
 
-htmlfile.close
+# unneeded using with  
+#htmlfile.close
